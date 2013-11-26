@@ -1,0 +1,399 @@
+
+<html>
+
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <style type="text/css">
+            body {
+                margin: 3% 16.5% 3% 16.5%;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 16px;
+            }
+
+            table {
+                font-size: 0.8em;
+                color:#333333;
+                border-width: 1px;
+                border-color: #666666;
+                border-collapse: collapse;
+            }
+
+            table th {
+                border-width: 1px;
+                padding: 8px;
+                border-style: solid;
+                border-color: #666666;
+                background-color: #dedede;
+            }
+
+            table td {
+                border-width: 1px;
+                padding: 8px;
+                border-style: solid;
+                border-color: #666666;
+                background-color: #ffffff;
+            }
+
+.admonition, .admonition-title {
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #eee;
+}
+
+            .codehilitetable .hll { background-color: #ffffcc }
+.codehilitetable  { background: #f8f8f8; }
+.codehilitetable .c { color: #408080; font-style: italic } /* Comment */
+.codehilitetable .err { border: 1px solid #FF0000 } /* Error */
+.codehilitetable .k { color: #008000; font-weight: bold } /* Keyword */
+.codehilitetable .o { color: #666666 } /* Operator */
+.codehilitetable .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.codehilitetable .cp { color: #BC7A00 } /* Comment.Preproc */
+.codehilitetable .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.codehilitetable .cs { color: #408080; font-style: italic } /* Comment.Special */
+.codehilitetable .gd { color: #A00000 } /* Generic.Deleted */
+.codehilitetable .ge { font-style: italic } /* Generic.Emph */
+.codehilitetable .gr { color: #FF0000 } /* Generic.Error */
+.codehilitetable .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.codehilitetable .gi { color: #00A000 } /* Generic.Inserted */
+.codehilitetable .go { color: #808080 } /* Generic.Output */
+.codehilitetable .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.codehilitetable .gs { font-weight: bold } /* Generic.Strong */
+.codehilitetable .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.codehilitetable .gt { color: #0040D0 } /* Generic.Traceback */
+.codehilitetable .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.codehilitetable .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.codehilitetable .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.codehilitetable .kp { color: #008000 } /* Keyword.Pseudo */
+.codehilitetable .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.codehilitetable .kt { color: #B00040 } /* Keyword.Type */
+.codehilitetable .m { color: #666666 } /* Literal.Number */
+.codehilitetable .s { color: #BA2121 } /* Literal.String */
+.codehilitetable .na { color: #7D9029 } /* Name.Attribute */
+.codehilitetable .nb { color: #008000 } /* Name.Builtin */
+.codehilitetable .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.codehilitetable .no { color: #880000 } /* Name.Constant */
+.codehilitetable .nd { color: #AA22FF } /* Name.Decorator */
+.codehilitetable .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.codehilitetable .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.codehilitetable .nf { color: #0000FF } /* Name.Function */
+.codehilitetable .nl { color: #A0A000 } /* Name.Label */
+.codehilitetable .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.codehilitetable .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.codehilitetable .nv { color: #19177C } /* Name.Variable */
+.codehilitetable .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.codehilitetable .w { color: #bbbbbb } /* Text.Whitespace */
+.codehilitetable .mf { color: #666666 } /* Literal.Number.Float */
+.codehilitetable .mh { color: #666666 } /* Literal.Number.Hex */
+.codehilitetable .mi { color: #666666 } /* Literal.Number.Integer */
+.codehilitetable .mo { color: #666666 } /* Literal.Number.Oct */
+.codehilitetable .sb { color: #BA2121 } /* Literal.String.Backtick */
+.codehilitetable .sc { color: #BA2121 } /* Literal.String.Char */
+.codehilitetable .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.codehilitetable .s2 { color: #BA2121 } /* Literal.String.Double */
+.codehilitetable .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.codehilitetable .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.codehilitetable .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.codehilitetable .sx { color: #008000 } /* Literal.String.Other */
+.codehilitetable .sr { color: #BB6688 } /* Literal.String.Regex */
+.codehilitetable .s1 { color: #BA2121 } /* Literal.String.Single */
+.codehilitetable .ss { color: #19177C } /* Literal.String.Symbol */
+.codehilitetable .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.codehilitetable .vc { color: #19177C } /* Name.Variable.Class */
+.codehilitetable .vg { color: #19177C } /* Name.Variable.Global */
+.codehilitetable .vi { color: #19177C } /* Name.Variable.Instance */
+.codehilitetable .il { color: #666666 } /* Literal.Number.Integer.Long */
+        </style>
+
+
+    </head>
+
+    <body>
+        <h1>Lua @ Chartbeat</h1>
+<p><a href="http://chartbeat.com/">Chartbeat</a> provides real-time analytics and
+intelligence, with a focus on the publishing world. We run on 80% of
+major news sites (New York Times, Wall Street Journal, etc), and show
+them insights on how users are engaging with their content, generally
+with latencies measured in fraction of a second to a few seconds.</p>
+<p><a href="http://www.lua.org/">Lua</a> is a small, fast, and easily embeddable
+scripting language. It strives for simplicity, comprehensibility,
+speed, and easy+efficient interfacing with C/C++ programs. These
+qualities have made it popular as a scripting language for games and
+embedded systems.</p>
+<p>Lua has an official implementation maintained by the desginers at
+PUC-Rio, and a second implementation by Mike Pall called
+<a href="http://luajit.org/">LuaJIT</a>. We use LuaJIT embedded into Nginx and
+Memoryfly, an in-house complex event processing system that is the
+brain of Chartbeat.</p>
+<h2>Life of a Ping</h2>
+<p>When a visitor loads a page of one of our customer's pages, our
+Javascript runs and starts sending us little pieces of information,
+called pings, about what the user is doing.</p>
+<p><img alt="Chrome Inspector on Gawker" src="gawker_ping.png" title="Gawker ping" /></p>
+<p>In particular, we're interested if the user is scrolling the screen,
+moving the mouse, or typing. We call this activity <em>engaged time</em>.</p>
+<p>This results in a peak load on an average day of 140,000 pings per
+second. The pings arrive on a cluster of Nginx machines, which are
+configured to route them to Memoryfly shards based on
+domain. Memoryfly processes the pings and provides statistics,
+histograms, etc that power the <a href="https://chartbeat.com/demo/">Chartbeat
+dashboard</a>. Internal APIs query Memoryfly
+for their data.</p>
+<p><img alt="ping flow diagram" src="ping_flow.png" title="Ping flow" /></p>
+<h2>Use Case #1: Ping Sampling</h2>
+<p>We aggregate then throw away the vast majority of our ping data. For
+some applications, though, we need complete ping history, but keeping
+around every ping is just too much data. Instead, we log a subset of
+all visitors. To avoid pushing huge amounts of unnecessary data
+through our system, we sample as early in the pipeline as possible,
+thus in Nginx.</p>
+<p>The <a href="https://github.com/chaoslawful/lua-nginx-module">lua-nginx-module</a>
+allows you to write an Nginx request handler in Lua. It interfaces via
+Nginx's config stanzas:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="codehilite"><pre><span class="n">location</span> <span class="o">=</span> <span class="o">/</span><span class="n">test</span> <span class="p">{</span>
+    <span class="n">content_by_lua</span> <span class="s1">&#39;</span>
+        <span class="kd">local</span> <span class="n">args</span> <span class="o">=</span> <span class="n">ngx</span><span class="p">.</span><span class="n">req</span><span class="p">.</span><span class="n">get_uri_args</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="k">in</span> <span class="nb">pairs</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="k">do</span>
+            <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;</span><span class="s">table&quot;</span> <span class="k">then</span>
+                <span class="n">ngx</span><span class="p">.</span><span class="n">say</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">: &quot;</span><span class="p">,</span> <span class="nb">table.concat</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">, &quot;</span><span class="p">))</span>
+            <span class="k">else</span>
+                <span class="n">ngx</span><span class="p">.</span><span class="n">say</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="s2">&quot;</span><span class="s">: &quot;</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span>
+            <span class="k">end</span>
+        <span class="k">end</span>
+    <span class="s1">&#39;</span><span class="s">;</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table>
+
+<p><code>lua-nginx-module</code> gives a set of interfacing functions to Nginx. For
+example, <code>ngx.say</code> outputs text as the response body to the
+client. <code>ngx.req</code> is an object that provides accessor methods for data
+inside of the HTTP request.</p>
+<p>Our sampling code, then, looks approximate like this:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="codehilite"><pre><span class="kd">local</span> <span class="k">function</span> <span class="nf">process_ping</span><span class="p">()</span>
+   <span class="kd">local</span> <span class="n">ctx</span> <span class="o">=</span> <span class="p">{}</span>
+   <span class="n">ctx</span><span class="p">.</span><span class="n">args</span> <span class="o">=</span> <span class="n">ngx</span><span class="p">.</span><span class="n">req</span><span class="p">.</span><span class="n">get_uri_args</span><span class="p">()</span>
+   <span class="n">ctx</span><span class="p">.</span><span class="n">req_time</span> <span class="o">=</span> <span class="n">ngx</span><span class="p">.</span><span class="n">now</span><span class="p">()</span>
+   <span class="n">ctx</span><span class="p">.</span><span class="n">user_agent</span> <span class="o">=</span> <span class="n">ngx</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">http_user_agent</span> <span class="ow">or</span> <span class="s2">&quot;</span><span class="s">&quot;</span>
+   <span class="n">ctx</span><span class="p">.</span><span class="n">remote_addr</span> <span class="o">=</span> <span class="n">ngx</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">remote_addr</span>
+   <span class="n">ctx</span><span class="p">.</span><span class="n">http_referrer</span> <span class="o">=</span> <span class="n">ngx</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">http_referer</span>
+   <span class="n">ctx</span><span class="p">.</span><span class="n">query_string</span> <span class="o">=</span> <span class="n">ngx</span><span class="p">.</span><span class="n">var</span><span class="p">.</span><span class="n">args</span>
+   <span class="n">ctx</span><span class="p">.</span><span class="n">u_key</span> <span class="o">=</span> <span class="n">ctx</span><span class="p">.</span><span class="n">args</span><span class="p">[</span><span class="s2">&quot;</span><span class="s">u&quot;</span><span class="p">]</span> <span class="c1">-- uniquely identifies a user</span>
+
+   <span class="kd">local</span> <span class="n">rate</span> <span class="o">=</span> <span class="mf">0.01</span>
+   <span class="kd">local</span> <span class="n">scale_factor</span> <span class="o">=</span> <span class="mi">100000</span>
+   <span class="kd">local</span> <span class="n">u_key_hash</span> <span class="o">=</span> <span class="n">mmh3_32</span><span class="p">(</span><span class="n">ctx</span><span class="p">.</span><span class="n">u_key</span><span class="p">,</span> <span class="nb">string.len</span><span class="p">(</span><span class="n">ctx</span><span class="p">.</span><span class="n">u_key</span><span class="p">))</span> <span class="c1">-- 32-bit Mumurhash</span>
+   <span class="kd">local</span> <span class="n">sample_worthy</span> <span class="o">=</span> <span class="p">(</span><span class="n">u_key_hash</span> <span class="o">%</span> <span class="n">scale_factor</span><span class="p">)</span> <span class="o">&lt;</span> <span class="p">(</span><span class="n">rate</span> <span class="o">*</span> <span class="n">scale_factor</span><span class="p">)</span>
+
+   <span class="k">if</span> <span class="n">sample_worthy</span> <span class="k">then</span>
+      <span class="c1">-- build log line to be shipped elsewhere for processing</span>
+      <span class="n">line</span> <span class="o">=</span> <span class="n">build_ping_log_line</span><span class="p">(</span><span class="n">ctx</span><span class="p">)</span>
+      <span class="n">logging</span><span class="p">.</span><span class="n">writeln</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+   <span class="k">end</span>
+<span class="k">end</span>
+</pre></div>
+</td></tr></table>
+
+<p>What is performance like? Our Nginx servers are IO bound, so in
+practice the Lua code hasn't added any noticeable overhead. This code
+regularly serves over 6,000 requests per second. But suppose it <em>did</em>
+impact CPU use. That's an easy problem to solve -- run more Nginx
+servers.</p>
+<h2>Use Case #2: Memoryfly Computation</h2>
+<p>Memoryfly is a C/C++ application for processing pings as they stream
+in. The development pattern for Memoryfly is traditionally:</p>
+<ol>
+<li>
+<p>Product team says, "hey it'd be great if we could compute X."</p>
+</li>
+<li>
+<p>Developer works on function for X.</p>
+</li>
+<li>
+<p>Developer rebuilds Memoryfly.</p>
+</li>
+<li>
+<p>Developer tests.</p>
+</li>
+<li>
+<p>Repeat 2 - 4.</p>
+</li>
+<li>
+<p>Developer blesses code, then <em>deploys</em> new version of Memoryfly
+     with X.</p>
+</li>
+<li>
+<p>We patiently await requisite segfault and crummy backtrace.</p>
+</li>
+<li>
+<p>Attach gdb to core, debug.</p>
+</li>
+<li>
+<p>Repeat 2 - 8 until nirvana is reached.</p>
+</li>
+</ol>
+<p>In other words, your typically slow and painful development cycle for
+a language lacking basic privileges of human civilization like garbage
+collection.</p>
+<p>To ease the development process, we embedded LuaJIT into Memoryfly and
+exposed a ping iteration mechanism to Lua, accompanied by a mechanism
+to take the return from a Lua function and convert it into an HTTP
+response. This is sample code for calculating mobile vs. desktop usage
+for some particular domain:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></div></td><td class="code"><div class="codehilite"><pre><span class="kd">local</span> <span class="n">desktop</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="kd">local</span> <span class="n">mobile</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">ping</span> <span class="k">in</span> <span class="n">ping_iter</span><span class="p">()</span> <span class="k">do</span>
+    <span class="c1">-- the &#39;P&#39; key tells us if the ping was mobile or not</span>
+    <span class="kd">local</span> <span class="n">ping_platform</span> <span class="o">=</span> <span class="n">ping</span><span class="p">:</span><span class="n">string_key</span><span class="p">(</span><span class="s1">&#39;</span><span class="s">P&#39;</span><span class="p">)</span>
+
+    <span class="c1">-- count up mobile vs desktop pings</span>
+    <span class="k">if</span> <span class="n">ping_platform</span> <span class="o">~=</span> <span class="s1">&#39;</span><span class="s">m&#39;</span> <span class="k">then</span>
+        <span class="n">mobile</span> <span class="o">=</span> <span class="n">mobile</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span>
+        <span class="n">desktop</span> <span class="o">=</span> <span class="n">desktop</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="k">return</span> <span class="n">json</span><span class="p">.</span><span class="n">encode</span><span class="p">({</span>
+    <span class="n">mobile</span><span class="o">=</span><span class="n">mobile</span><span class="p">,</span>
+    <span class="n">desktop</span><span class="o">=</span><span class="n">desktop</span><span class="p">,</span>
+<span class="p">})</span>
+</pre></div>
+</td></tr></table>
+
+<p>We can upload Lua code into Memoryfly in real time, which will then
+execute and return results immediately.</p>
+<p>Pros:</p>
+<ol>
+<li>
+<p>Lua is considerably easier and quicker to learn than C, so it
+     widens the possible set of developers who can implement Memoryfly
+     APIs.</p>
+</li>
+<li>
+<p>It's much harder to make Lua crash.</p>
+</li>
+<li>
+<p>Debug cycle for API development is much faster. We have a handy
+     web page that allows developers to edit Lua code, submit to
+     Memoryfly, and get results back.</p>
+</li>
+<li>
+<p>Because we iterate through all data, we can make arbitrary
+     calculations. Where we previously had to specialize Memoryfly
+     APIs to allow for data pivots in specific dimensions, we now
+     allow our customers to arbitrarily pivot on any data.</p>
+</li>
+<li>
+<p>It's very fast. Almost as fast as hand written C in most cases,
+     faster in some.</p>
+</li>
+</ol>
+<p>Cons:</p>
+<ol>
+<li>
+<p>(caveat) Memoryfly is single threaded. To prevent buggy Lua code
+     from causing a denial of service, Memoryfly times the run and
+     kills it if it takes too long. Memoryfly also throttles the
+     number of Lua functions it runs to make sure it doesn't
+     accidentally accumulate a backlog of unprocessed pings.</p>
+</li>
+<li>
+<p>String manipulation in Lua is slow, so APIs that do too much of
+     that see perverse performance characteristics.</p>
+</li>
+<li>
+<p>Lua itself is a quirky language: no integers, 1-indexed arrays,
+     well, no arrays for that matter as tables are the only data
+     structure.</p>
+</li>
+<li>
+<p>Module system isn't fully fleshed out. There are competing
+     methods, and it seems like the community is figuring it out,
+     however this makes developing larger programs cumbersome. Because
+     we're injecting small programs into a larger system, it doesn't
+     matter to us.</p>
+</li>
+</ol>
+<h2>Performance Runs</h2>
+<ul>
+<li>
+<p><a href="path_count.cc">C++</a></p>
+</li>
+<li>
+<p><a href="path_count.js">JS</a></p>
+</li>
+<li>
+<p><a href="path_count.py">Python/PyPy</a></p>
+</li>
+<li>
+<p><a href="path_count.lua">Lua/Luajit</a>.</p>
+</li>
+</ul>
+<h2>Wrapping Up</h2>
+<p>Lua has served us great in a very limited role.</p>
+<ol>
+<li>
+<p>Vastly sped up development. Easy to learn, easy to embed.</p>
+</li>
+<li>
+<p>Given us flexibility to compute things we couldn't compute
+     before.</p>
+</li>
+<li>
+<p>Very high performance, and it's done what we need it probably
+     about as fast as if we'd done it by hand.</p>
+</li>
+</ol>
+    </body>
+
+</html>
