@@ -1,4 +1,15 @@
 
+!!! note "Meta"
+    These are the notes for a talk I gave at the Full Stack
+    Engineering Meetup in NYC on Nov 26, 2013. You can reach me at
+    wes@chartbeat.com, follow [@weschow](https://twitter.com/weschow),
+    or [read random thoughts here](http://itburns.tumblr.com/). This
+    talk's rendered html can be found at
+    [http://wesc.github.io/talks/lua_at_cb/](http://wesc.github.io/talks/lua_at_cb/),
+    or you can directly view the source files at
+    [https://github.com/wesc/talks/tree/gh-pages/lua_at_cb](https://github.com/wesc/talks/tree/gh-pages/lua_at_cb).
+
+
 Lua @ Chartbeat
 ===============
 
