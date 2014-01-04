@@ -230,7 +230,7 @@ Performance Runs
 
   * [Python/PyPy](path_count.py)
 
-  * [Lua/Luajit](path_count.lua).
+  * [Lua/Luajit](path_count.lua)
 
 
 Wrapping Up

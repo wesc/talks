@@ -1,13 +1,54 @@
 
-<html>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 
     <head>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Your Page Title Here :)</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="skeleton/stylesheets/base.css">
+	<link rel="stylesheet" href="skeleton/stylesheets/skeleton.css">
+	<link rel="stylesheet" href="skeleton/stylesheets/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="skeleton/images/favicon.ico">
+	<link rel="apple-touch-icon" href="skeleton/images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="skeleton/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="skeleton/images/apple-touch-icon-114x114.png">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
         <style type="text/css">
             body {
-                margin: 3% 16.5% 3% 16.5%;
                 font-family: 'Open Sans', sans-serif;
                 font-size: 16px;
+            }
+
+            .container {
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
+
+            .container img {
+                width: 100%;
             }
 
             table {
@@ -34,9 +75,16 @@
                 background-color: #ffffff;
             }
 
-.admonition, .admonition-title {
-    padding-left: 1em;
-    padding-right: 1em;
+.codehilitetable {
+    font-family: monospace;
+}
+
+.admonition.note .admonition-title {
+    display: none;
+}
+
+.admonition.note p {
+    padding: 1em 1em 1em 1em;
     background-color: #eee;
 }
 
@@ -108,7 +156,9 @@
     </head>
 
     <body>
-        <div class="admonition note">
+        <div class="container">
+            <div class="sixteen columns">
+                <div class="admonition note">
 <p class="admonition-title">Meta</p>
 <p>These are the notes for a talk I gave at the Full Stack
 Engineering Meetup in NYC on Nov 26, 2013. You can reach me at
@@ -387,7 +437,7 @@ execute and return results immediately.</p>
 <p><a href="path_count.py">Python/PyPy</a></p>
 </li>
 <li>
-<p><a href="path_count.lua">Lua/Luajit</a>.</p>
+<p><a href="path_count.lua">Lua/Luajit</a></p>
 </li>
 </ul>
 <h2>Wrapping Up</h2>
@@ -405,6 +455,8 @@ execute and return results immediately.</p>
      about as fast as if we'd done it by hand.</p>
 </li>
 </ol>
+            </div>
+        </div>
     </body>
 
 </html>
